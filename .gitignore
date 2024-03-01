@@ -1,0 +1,11 @@
+# Node.js
+node_modules/
+npm-debug.log
+
+# Build artifacts
+dist/
+coverage/
+
+# OS-specific files
+.DS_Store
+Thumbs.db

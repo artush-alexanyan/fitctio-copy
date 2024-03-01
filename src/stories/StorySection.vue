@@ -11,8 +11,8 @@
                         <p class="text-gray-500 text-left mt-2"> {{ slide.title }} </p>
                     </div>
                 </Slide>
-                <template class="md:block hidden" #addons>
-                    <Navigation />
+                <template  #addons>
+                    <Navigation class="md:block hidden" />
                 </template>
             </Carousel>
         </div>

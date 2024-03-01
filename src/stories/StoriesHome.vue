@@ -9,7 +9,7 @@
             <StorySection :stories="stories" :sectionTitle="`Based on your recente reading`" />
             <StorySection :stories="stories" :sectionTitle="`Based on your recente reading`" />
         </div>
-        <div class="fixed md:bottom-6 bottom-20 right-5">
+        <div class="fixed md:bottom-6 bottom-24 right-5">
             <div class="h-12 w-12 rounded-full shadow shadow-white">
                 <img src="../assets/stories/stories-gift.png" />
             </div>
@@ -27,8 +27,7 @@ import StoryHeader from './StoryHeader.vue';
 
 
 const tags = ref([
-    "TagOneTagOne", "TagTwo TagTwo", "TagThreeFourFive", "TagFour TagFive TagFiv", "TagFive TagFiv TagSix",
-    "TagOne", "TagTwo", "TagThreeTagFour", "TagFive TagSix",
+    "Shapeshifters", "Adult fiction", "Paranormal romance", "bad-boys"
 ]);
 
 const stories = ref([
