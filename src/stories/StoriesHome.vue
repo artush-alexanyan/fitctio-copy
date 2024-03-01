@@ -41,25 +41,5 @@ const stories = ref([
 </script>
 
 <style scoped>
-/* Hide scrollbar for Firefox */
-.stories {
-    scrollbar-width: thin;
-    scrollbar-color: transparent transparent;
-}
 
-/* Hide scrollbar for Webkit browsers (Chrome, Safari, Edge) */
-.stories::-webkit-scrollbar {
-    width: 12px;
-    /* Set a width for the scrollbar */
-}
-
-.stories::-webkit-scrollbar-thumb {
-    background-color: transparent;
-    /* Set the color of the thumb */
-}
-
-.stories::-webkit-scrollbar-track {
-    background-color: transparent;
-    /* Set the color of the track */
-}
 </style>

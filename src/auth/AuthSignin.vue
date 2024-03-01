@@ -9,11 +9,11 @@
             </div>
             <div class="absolute bottom-10 left-0 right-0 md:px-10 px-5 md:max-w-sm mx-auto">
                 <div class="flex flex-col space-y-3">
-                    <button @click="userSignin"
+                    <button @click="userGoogleSignin"
                         class="bg-white w-full flex items-center justify-between rounded-md px-5 py-2.5">
                         <img src="../assets/auth/gmail.png" class="h-5" alt="gmail-icon" />
                         <span class="pr-20">Login with google</span> </button>
-                    <button @click="userSignin"
+                    <button @click="userFacebookSignin"
                         class="bg-white w-full flex items-center justify-between rounded-md px-5 py-2.5">
                         <img src="../assets/auth/facebook.png" class="h-5 rounded" alt="gmail-icon" />
                         <span class="pr-20">Login with facebook</span> </button>
@@ -28,11 +28,18 @@
 </template>
 
 <script setup>
-import { useRouter } from "vue-router";
-
+import { useAuthStore } from '@/store/auth/auth';
+import { useRouter } from 'vue-router';
 const router = useRouter();
+const authStore = useAuthStore();
 
-const userSignin = () => {
+const userGoogleSignin = async () => {
+    await authStore.userGoogleSignin();
     router.push({ path: '/stories' })
-}
+};
+
+const userFacebookSignin = async () => {
+    await authStore.userFacebookSignin();
+    router.push({ path: '/stories' })
+};
 </script>
