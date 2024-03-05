@@ -35,11 +35,11 @@ const authStore = useAuthStore();
 
 const userGoogleSignin = async () => {
     await authStore.userGoogleSignin();
-    router.push({ path: '/stories' })
+    router.push({ path: '/dashboard/stories' })
 };
 
 const userFacebookSignin = async () => {
     await authStore.userFacebookSignin();
-    router.push({ path: '/stories' })
+    router.push({ path: '/dashboard/stories' })
 };
 </script>
