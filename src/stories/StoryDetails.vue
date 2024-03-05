@@ -132,17 +132,17 @@
           <!-- FOOTER -->
           <div>
             <div
-              class="fixed z-50 bottom-0 left-0 right-0 border-t border-t-gray-200 bg-white flex items-center justify-between px-5 py-3"
+              class="fixed z-50 bottom-0 left-0 right-0 border-t border-t-gray-200 bg-white flex items-center justify-center space-x-4 py-3"
             >
               <button
-                class="py-[1rem] px-7 rounded-full bg-white border border-red-600 text-red-600 text-xl"
+                class="py-2 px-6 rounded-full bg-white border border-red-600 text-red-600 text-lg"
               >
                 Suscribe Now
               </button>
               <button
-                class="py-[1rem] px-7 rounded-full bg-red-600 text-white text-xl"
+                class="py-2 px-6 rounded-full bg-red-600 text-white text-lg"
               >
-                Suscribe Now
+                Download Now
               </button>
             </div>
           </div>
